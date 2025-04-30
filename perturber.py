@@ -74,7 +74,7 @@ class DatasetPreparer:
         outliers_idx = test_env.index[outlier_mask]
         remaining_idx = test_env.index[~outlier_mask]
 
-        # divide in perturber and non perturbed
+        # divide in perturbed and non-perturbed
         rng = np.random.default_rng(self.random_state)
         shuffled = rng.permutation(remaining_idx)
         half = len(shuffled) // 2
@@ -144,7 +144,7 @@ class DatasetPreparer:
                             df: pd.DataFrame,
                             idx: pd.Index):
 
-        k = min(50, max(1, len(idx) // 4))
+        k = min(50, max(1, len(idx) // 4))  # dal paper di song
         rng = np.random.default_rng(self.random_state)
 
         for i in idx:
@@ -175,3 +175,4 @@ if __name__ == "__main__":
     )
 
     prepared_df, split = prep.prepare(datas)
+

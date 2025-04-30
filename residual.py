@@ -88,9 +88,6 @@ class ComputeResiduals(object):
 
 
 
-
-
-
 if __name__ == "__main__":
     from ucimlrepo import fetch_ucirepo
 
@@ -109,11 +106,11 @@ if __name__ == "__main__":
 
 
     data = prep.prepare(data=datas)
-    data_proc = data.dataset()
+    prepared_df, split = prep.prepare(datas)
 
     env_cols = ["year", "month", "day", "latitude", "longitude"]
     res = ComputeResiduals(env_cols, "zon_winds", n_bayes_iter=10, random_state=42)
-    residuals = res.calc_residuals(data=data_proc)
+    residuals = res.calc_residuals(data=prepared_df)
 
 
     print("stop")

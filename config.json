@@ -1,0 +1,11 @@
+{
+  "datasets": [
+    {
+      "name": "body_fat",
+      "data_path": "datas/bodyfat.csv",
+      "env_cols":["Age", "Weight", "Height", "Neck", "Chest", "Abdomen", "Hip", "Thigh", "Knee", "Ankle",
+                  "Biceps", "Forearm", "Wrist"],
+      "ind_cols": ["Density", "BodyFat"]
+    }
+    ]
+}
