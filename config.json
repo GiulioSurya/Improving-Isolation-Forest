@@ -1,0 +1,10 @@
+{
+  "datasets": [
+   {
+      "name": "syntetic_Hy_Hx",
+      "data_path": "datas/synthetic_data_high_varX.csv",
+      "env_cols": ["env_X0","env_X1","env_X2","env_X3","env_X4","env_X5"],
+      "ind_cols": ["ind_Y0","ind_Y1","ind_Y2"]
+    }
+  ]
+}

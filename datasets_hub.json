@@ -1,0 +1,134 @@
+{
+  "datasets": [
+    {
+      "name": "elnino",
+      "data_path": "datas/elnino_clean.csv",
+      "env_cols": ["year", "month", "day", "latitude", "longitude"],
+      "ind_cols": ["zon_winds", "mer_winds", "humidity", "air_temp", "ss_temp"]
+    },
+    {
+      "name": "body_fat",
+      "data_path": "datas/bodyfat.csv",
+      "env_cols":["Age", "Weight", "Height", "Neck", "Chest", "Abdomen", "Hip", "Thigh", "Knee", "Ankle",
+                  "Biceps", "Forearm", "Wrist"],
+      "ind_cols": ["Density", "BodyFat"]
+    },
+    {
+      "name": "california_housing",
+      "data_path": "datas/housing.csv",
+      "env_cols": ["median_income", "housing_median_age", "total_rooms","total_bedrooms", "population", "households",
+        "latitude", "longitude", "ocean_proximity_INLAND", "ocean_proximity_ISLAND", "ocean_proximity_NEAR BAY",
+        "ocean_proximity_NEAR OCEAN"],
+      "ind_cols": ["median_house_value"]
+    },
+    {
+      "name": "heart_disease",
+      "data_path": "datas/heart.csv",
+      "env_cols": ["age", "sex" , "ca", "thal", "cp", "restecg"],
+      "ind_cols": [ "thalach", "exang", "oldpeak", "slope","trestbps", "chol", "fbs"]
+    },
+    {
+      "name": "hydraulic_condition_monitoring",
+      "data_path": "datas/hydraulic.csv",
+      "env_cols": ["EPS1", "TS1", "TS2", "TS3", "TS4", "CP", "CE", "SE"],
+      "ind_cols": ["PS1", "PS2", "PS3", "PS4", "PS5", "PS6", "FS1", "FS2", "VS1"]
+    },
+    {
+      "name": "forest_covertype",
+      "data_path": "datas/forest_10.csv",
+      "env_cols": [
+        "Cover_Type",
+        "Soil_Type1", "Soil_Type2", "Soil_Type3", "Soil_Type4", "Soil_Type5",
+        "Soil_Type6", "Soil_Type7", "Soil_Type8", "Soil_Type9", "Soil_Type10",
+        "Soil_Type11", "Soil_Type12", "Soil_Type13", "Soil_Type14", "Soil_Type15",
+        "Soil_Type16", "Soil_Type17", "Soil_Type18", "Soil_Type19", "Soil_Type20",
+        "Soil_Type21", "Soil_Type22", "Soil_Type23", "Soil_Type24", "Soil_Type25",
+        "Soil_Type26", "Soil_Type27", "Soil_Type28", "Soil_Type29", "Soil_Type30",
+        "Soil_Type31", "Soil_Type32", "Soil_Type33", "Soil_Type34", "Soil_Type35",
+        "Soil_Type36", "Soil_Type37", "Soil_Type38", "Soil_Type39", "Soil_Type40",
+        "Wilderness_Area1", "Wilderness_Area2", "Wilderness_Area3", "Wilderness_Area4",
+        "Horizontal_Distance_To_Hydrology",
+        "Vertical_Distance_To_Hydrology",
+        "Horizontal_Distance_To_Roadways",
+        "Horizontal_Distance_To_Fire_Points",
+        "Hillshade_9am",
+        "Hillshade_Noon",
+        "Hillshade_3pm"
+      ],
+      "ind_cols": [
+        "Elevation",
+        "Aspect",
+        "Slope"
+      ]
+    },
+    {
+      "name": "starlink",
+      "data_path": "datas/starlink.csv",
+      "env_cols": ["latitude", "longitude", "elevation_m", "season_Fall", "season_Spring", "season_Summer",
+        "season_Winter", "weather_Clear", "weather_Dense_Fog", "weather_Heavy_Rain", "weather_Light_Rain",
+        "weather_Moderate_Rain", "weather_Rain", "weather_Snow", "visible_satellites", "serving_satellites"],
+      "ind_cols": ["signal_loss_db", "download_throughput_bps", "upload_throughput_bps", "packet_loss"]
+    },
+    {
+      "name": "iris",
+      "data_path": "datas/iris.csv",
+      "env_cols": ["sepal length", "sepal width", "petal length", "petal width"],
+      "ind_cols": ["class_Iris-setosa", "class_Iris-versicolor", "class_Iris-virginica"]
+    },
+    {
+      "name": "taiwanese_bankruptcy_prediction",
+      "data_path": "datas/taiwanese_bankruptcy_prediction.csv",
+      "env_cols": ["operating_profit_rate", "pre_tax_net_interest_rate", "after_tax_net_interest_rate",
+        "non_industry_income_and_expenditure_revenue", "regular_net_profit_growth_rate", "continuous_net_profit_growth_rate",
+        "total_asset_growth_rate", "total_debt_total_net_worth", "total_asset_turnover", "average_collection_days",
+        "fixed_assets_turnover_frequency", "net_worth_turnover_rate_times", "total_income_total_expense"],
+      "ind_cols": ["roa_c_before_interest_and_depreciation_before_interest", "roa_a_before_interest_and_after_tax",
+        "roa_b_before_interest_and_depreciation_after_tax", "operating_gross_margin", "realized_sales_gross_margin",
+        "continuous_interest_rate_after_tax", "operating_expense_rate", "research_and_development_expense_rate",
+        "cash_flow_rate", "interest_bearing_debt_interest_rate", "tax_rate_a", "net_value_per_share_b",
+        "net_value_per_share_a", "net_value_per_share_c", "persistent_eps_in_the_last_four_seasons",
+        "cash_flow_per_share", "revenue_per_share_yuan", "operating_profit_per_share_yuan",
+        "per_share_net_profit_before_tax_yuan", "realized_sales_gross_profit_growth_rate",
+        "operating_profit_growth_rate", "after_tax_net_profit_growth_rate", "net_value_growth_rate",
+        "total_asset_return_growth_rate_ratio", "cash_reinvestment", "current_ratio", "quick_ratio",
+        "interest_expense_ratio", "debt_ratio", "net_worth_assets", "long_term_fund_suitability_ratio_a",
+        "borrowing_dependency", "contingent_liabilities_net_worth", "operating_profit_paid_in_capital",
+        "net_profit_before_tax_paid_in_capital", "inventory_and_accounts_receivable_net_value",
+        "accounts_receivable_turnover", "inventory_turnover_rate_times", "revenue_per_person",
+        "operating_profit_per_person", "allocation_rate_per_person", "working_capital_to_total_assets",
+        "quick_assets_total_assets", "current_assets_total_assets", "cash_total_assets",
+        "quick_assets_current_liability", "cash_current_liability", "current_liability_to_assets",
+        "operating_funds_to_liability", "inventory_working_capital", "inventory_current_liability",
+        "current_liabilities_liability", "working_capital_equity", "current_liabilities_equity",
+        "long_term_liability_to_current_assets", "retained_earnings_to_total_assets", "total_expense_assets",
+        "current_asset_turnover_rate", "quick_asset_turnover_rate", "working_capitcal_turnover_rate",
+        "cash_turnover_rate", "cash_flow_to_sales", "fixed_assets_to_assets", "current_liability_to_liability",
+        "current_liability_to_equity", "equity_to_long_term_liability", "cash_flow_to_total_assets",
+        "cash_flow_to_liability", "cfo_to_assets", "cash_flow_to_equity", "current_liability_to_current_assets",
+        "liability_assets_flag", "net_income_to_total_assets", "total_assets_to_gnp_price", "no_credit_interval",
+        "gross_profit_to_sales", "net_income_to_stockholder_s_equity", "liability_to_equity",
+        "degree_of_financial_leverage_dfl", "interest_coverage_ratio_interest_expense_to_ebit", "net_income_flag",
+        "equity_to_liability"]
+    },
+    {
+      "name": "Power Consumption",
+      "data_path": "datas/power_consumption.csv",
+      "env_cols": ["temperature", "humidity", "wind_speed", "general_diffuse_flows",
+       "diffuse_flows", "date", "time"],
+      "ind_cols": ["zone_1_power_consumption", "zone_2_power_consumption", "zone_3_power_consumption"]
+    },
+     {
+      "name": "QSAR Aquatic Toxicity",
+      "data_path": "datas/qsar_aquatic_toxicity.csv",
+      "env_cols": ["TPSA(Tot)", "SAacc", "H-050", "MLOGP", "RDCHI", "GATS1p", "nN", "C-040"],
+      "ind_cols": ["LC50"]
+    },
+    {
+      "name": "syntetic",
+      "data_path": "datas/synthetic_data.csv",
+      "env_cols": ["env_X0","env_X1","env_X2","env_X3","env_X4","env_X5"],
+      "ind_cols": ["ind_Y0","ind_Y1","ind_Y2"]
+    }
+  ]
+    ]
+  }
